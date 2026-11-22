@@ -1,36 +1,33 @@
-# Demo Proyecto
+# Correos 1716–2026
 
-Demo de tres páginas HTML5 para Interfaces DAM. Usa Bootstrap 5.3.9 por CDN y JavaScript sin dependencias adicionales.
+Web estática del Proyecto de Digitalización (1.ª evaluación, 2.º DAM) sobre la evolución tecnológica de Correos.
+Usa Bootstrap 5.3.9 por CDN y no necesita servidor ni JavaScript propio.
 
 ## Estructura
 
 ```text
-estudio-norte/
-├── index.html
-├── servicios.html
-├── contacto.html
+demo-digitalizacion/
+├── index.html         Inicio: resumen, pregunta guía y cifras 2024
+├── historia.html      1. Identidad e historia
+├── empresa.html       Líneas de negocio, 2. Organización, 3. Presencia geográfica y mercado
+├── tecnologia.html    4. Evolución tecnológica (7 hitos), antes/después y vídeo
+├── curiosidades.html  5. Curiosidades e ideas de mejora digital
+├── img/               Fotografías (Wikimedia Commons, licencias CC)
 ├── css/
 │   └── style.css
-├── js/
-│   └── script.js
-├── img/
-│   └── estudio-demo.jpg
 └── README.md
 ```
 
-## Cómo abrir la demo
+## Cómo abrirla
 
-1. Descomprime el ZIP conservando las carpetas.
-2. Abre `index.html` en el navegador. También puedes abrir la carpeta en VS Code y usar Live Server si ya lo tienes instalado.
-3. Mantén la conexión a Internet para que el navegador cargue Bootstrap desde jsDelivr.
-4. Reduce el ancho de la ventana para probar el menú móvil. En Servicios puedes desplegar los paneles del acordeón.
-5. En Contacto, prueba primero un correo sin arroba y luego un correo válido. Con todos los datos válidos, aparece una confirmación del envío simulado.
+Abre `index.html` en el navegador (o pulsa F5 en VS Code). Hace falta conexión a Internet para cargar Bootstrap.
 
 ## Dónde personalizar
 
-- Edita los tres HTML para cambiar los textos. Si modificas el menú o el pie, aplica el cambio en cada HTML. Mantén `aria-current="page"` en el enlace de la página correspondiente.
-- En `css/style.css`, cambia las variables de `:root` para ajustar la paleta. Las clases de Bootstrap controlan la cuadrícula y el menú adaptable.
-- Sustituye `img/estudio-demo.jpg` o modifica el atributo `src` en `index.html`. Actualiza el texto alternativo y las dimensiones declaradas según la nueva imagen.
-- `js/script.js` se carga en Contacto y simula el envío en el navegador. El proyecto funciona como sitio estático y carece de un servicio de recepción de mensajes.
+- El menú y el pie se repiten en cada HTML: si los cambias, hazlo en todas las páginas y mantén
+  `aria-current="page"` en el enlace de la página actual.
+- Los colores están en las variables de `:root` en `css/style.css`.
+- Vídeo: en `tecnologia.html` hay un comentario que explica cómo insertar el vídeo de YouTube.
+- Gráficos: las barras de `empresa.html` usan la variable `--value` (porcentaje respecto al valor máximo).
 
-[Documentación oficial de Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/download/) · [Fotografía de demostración en Unsplash](https://images.unsplash.com/photo-1497366754035-f200968a6e72)
+Trabajo académico: no es la web oficial de Correos.

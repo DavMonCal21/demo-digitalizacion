@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Demo Proyecto, sitio de demostración sobre diseño y desarrollo web.">
-  <title>Inicio | Demo Proyecto</title>
+  <meta name="description" content="Proyecto de Digitalización sobre Correos: de los orígenes de la empresa en 1716 a su próximo paso digital.">
+  <title>Inicio | Correos 1716–2026</title>
   <!-- Primero Bootstrap, después los estilos del proyecto. -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
@@ -14,11 +14,11 @@
 <body class="d-flex flex-column min-vh-100">
   <a class="visually-hidden-focusable skip-link" href="#contenido">Saltar al contenido</a>
 
-  <!-- Navegación común. Bootstrap controla el menú plegable en móviles. -->
-  <nav class="navbar navbar-expand-md fixed-top site-nav" aria-label="Navegación principal">
+  <!-- Navegación común a todas las páginas. -->
+  <nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Navegación principal">
     <div class="container">
       <a class="navbar-brand brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true"></span> Demo Proyecto
+        <span class="brand-mark" aria-hidden="true"></span> Correos <small>1716–2026</small>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
@@ -26,83 +26,213 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menuPrincipal">
-        <ul class="navbar-nav ms-auto gap-md-2">
+        <ul class="navbar-nav ms-auto gap-lg-1">
           <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="empresa.html">Correos hoy</a></li>
+          <li class="nav-item"><a class="nav-link" href="tecnologia.html">Tecnología</a></li>
+          <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <main id="contenido" tabindex="-1">
-    <!-- Hero con dos columnas a partir de pantallas grandes. -->
+    <!-- Portada -->
     <section class="hero" aria-labelledby="titulo-inicio">
       <div class="container">
-        <div class="row align-items-center g-4 g-lg-5">
-          <div class="col-lg-6">
-            <h1 id="titulo-inicio" class="hero-title">Diseñamos webs <span>fáciles de usar.</span></h1>
-            <p class="intro mt-4 mb-4">
-              Creamos sitios claros, accesibles y adaptados a cada pantalla.
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="eyebrow">Proyecto Digitalización · Fase 1</span>
+            <h1 id="titulo-inicio" class="hero-title">De las cartas <span>a los paquetes.</span></h1>
+            <p class="intro mt-4 mb-0">
+              Más de 300 años conectando personas: de los orígenes de Correos en 1716
+              a su próximo paso digital.
             </p>
-            <a class="btn btn-accent btn-lg" href="servicios.html">
-              Explorar servicios <span aria-hidden="true">→</span>
-            </a>
+            <div class="guide-question">
+              <span class="label">Pregunta guía</span>
+              <p>¿Cómo ha cambiado la tecnología la forma de trabajar, vender y generar valor
+                 de Correos, y qué mejora digital propondríamos para su futuro?</p>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-accent btn-lg" href="tecnologia.html">
+                Ver la evolución tecnológica <span aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-outline-light btn-lg" href="historia.html">Empezar por la historia</a>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <!-- Sustituye la imagen de ejemplo y actualiza su texto alternativo. -->
-            <div class="hero-media">
-              <img src="img/estudio-demo.jpg" width="1280" height="854" class="img-fluid"
-                   alt="Pasillo de un estudio con salas acristaladas">
+          <div class="col-lg-5">
+            <!-- Sello decorativo hecho con CSS. -->
+            <div class="stamp-wrap" aria-hidden="true">
+              <div class="stamp">
+                <div class="stamp-inner">
+                  <span class="stamp-top">CORREOS</span>
+                  <span class="stamp-year">1716</span>
+                  <span class="stamp-caption">Más de 300 años conectando personas</span>
+                  <span class="stamp-value">2026</span>
+                </div>
+                <div class="postmark">MADRID<br>8 JUL<br>1716</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Una columna en móvil y tres a partir del breakpoint md. -->
-    <section class="section-space" aria-labelledby="titulo-areas">
+    <!-- Resumen -->
+    <section class="section-space" aria-labelledby="titulo-resumen">
       <div class="container">
-        <h2 id="titulo-areas" class="section-title mb-4">Qué hacemos</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-3 g-lg-4">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <span class="eyebrow">Resumen</span>
+            <h2 id="titulo-resumen" class="section-title">Una empresa de cartas que hoy vive de los paquetes</h2>
+          </div>
+          <div class="col-lg-7">
+            <p class="lead-text">
+              Correos nació en 1716 como servicio público para llevar cartas y hoy es, sobre todo,
+              una empresa de paquetería del comercio electrónico. En 2025, por primera vez, en España
+              se enviaron <strong>más paquetes que cartas</strong>, y Correos ha tenido que transformar
+              su forma de clasificar, seguir y entregar envíos.
+            </p>
+            <p class="lead-text mb-0">
+              Cuatro tecnologías explican ese cambio. Proceso estudiado: <strong>cómo han evolucionado
+              las empresas gracias a la tecnología</strong>.
+            </p>
+          </div>
+        </div>
+
+        <figure class="photo photo-wide mt-4 mt-lg-5">
+          <img src="img/furgoneta-puente-genil.jpg" width="1280" height="885" loading="lazy"
+               alt="Furgoneta amarilla de reparto de Correos aparcada en una calle"
+               style="aspect-ratio: 21 / 8; object-position: center 60%">
+          <figcaption>
+            Furgoneta de reparto de Correos en Puente Genil (Córdoba): la última etapa del viaje de cada paquete.
+            <span class="credit">Foto: CFA1877 · CC BY-SA 4.0 · <a href="https://commons.wikimedia.org/wiki/File:Furgoneta_de_Correos,_Puente_Genil.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span>
+          </figcaption>
+        </figure>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 g-lg-4 mt-2">
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card info-card">
               <div class="card-body p-4">
-                <h3 class="h5 fw-bold">Diseño de interfaces</h3>
-                <p class="mb-0">Damos forma a pantallas que ayudan a encontrar la información y completar tareas.</p>
+                <div class="card-icon" aria-hidden="true">✉</div>
+                <span class="card-kicker">1984</span>
+                <h3 class="h5 fw-bold">Código postal</h3>
+                <p>Cinco dígitos que permitieron a las máquinas clasificar sin leer la dirección.</p>
               </div>
             </article>
           </div>
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card info-card">
               <div class="card-body p-4">
-                <h3 class="h5 fw-bold">Desarrollo web</h3>
-                <p class="mb-0">Convertimos el diseño en páginas que se adaptan a móviles, tablets y ordenadores.</p>
+                <div class="card-icon" aria-hidden="true">⚙</div>
+                <span class="card-kicker">19 en 2024</span>
+                <h3 class="h5 fw-bold">Centros automatizados</h3>
+                <p>Clasificadoras que leen el código de barras y separan miles de paquetes por hora.</p>
               </div>
             </article>
           </div>
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card info-card">
               <div class="card-body p-4">
-                <h3 class="h5 fw-bold">Accesibilidad</h3>
-                <p class="mb-0">Revisamos la legibilidad, los contrastes y la navegación con teclado.</p>
+                <div class="card-icon" aria-hidden="true">▣</div>
+                <span class="card-kicker">Desde 2005</span>
+                <h3 class="h5 fw-bold">PDA de los carteros</h3>
+                <p>Cada entrega queda registrada en tiempo real y el cliente la ve al momento.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card info-card">
+              <div class="card-body p-4">
+                <div class="card-icon" aria-hidden="true">▦</div>
+                <span class="card-kicker">Citypaq y Modify</span>
+                <h3 class="h5 fw-bold">Entrega flexible</h3>
+                <p>El cliente decide cuándo y dónde recibe su paquete: taquillas y app.</p>
               </div>
             </article>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Cifras -->
+    <section class="section-space section-alt" aria-labelledby="titulo-cifras">
+      <div class="container">
+        <span class="eyebrow">Datos 2024</span>
+        <h2 id="titulo-cifras" class="section-title">Correos en cinco cifras</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-3 mt-1">
+          <div class="col"><div class="stat"><span class="stat-value">50.279</span><span class="stat-label">empleados en el Grupo</span></div></div>
+          <div class="col"><div class="stat"><span class="stat-value">5.846</span><span class="stat-label">oficinas</span></div></div>
+          <div class="col"><div class="stat"><span class="stat-value">19</span><span class="stat-label">centros de tratamiento automatizado</span></div></div>
+          <div class="col"><div class="stat"><span class="stat-value">1.169 M</span><span class="stat-label">envíos gestionados</span></div></div>
+          <div class="col"><div class="stat"><span class="stat-value">14.826</span><span class="stat-label">vehículos, de ellos 2.495 eléctricos</span></div></div>
+        </div>
+        <p class="source">Informe Anual Integrado 2024 del Grupo Correos, pp. 8–9</p>
+      </div>
+    </section>
+
+    <!-- Accesos a las secciones -->
+    <section class="section-space" aria-labelledby="titulo-explorar">
+      <div class="container">
+        <h2 id="titulo-explorar" class="section-title mb-4">Explora el proyecto</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-4">
+          <div class="col">
+            <a class="link-card" href="historia.html">
+              <span class="arrow" aria-hidden="true">→</span>
+              <h3 class="h5 fw-bold">Identidad e historia</h3>
+              <p>Dónde y cuándo empezó, qué ofrecía y cómo se convirtió en sociedad anónima.</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link-card" href="empresa.html">
+              <span class="arrow" aria-hidden="true">→</span>
+              <h3 class="h5 fw-bold">Correos hoy</h3>
+              <p>Líneas de negocio, organización, presencia geográfica y mercado.</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link-card" href="tecnologia.html">
+              <span class="arrow" aria-hidden="true">→</span>
+              <h3 class="h5 fw-bold">Evolución tecnológica</h3>
+              <p>Siete hitos, del código postal a la app Correos Modify.</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link-card" href="curiosidades.html">
+              <span class="arrow" aria-hidden="true">→</span>
+              <h3 class="h5 fw-bold">Curiosidades</h3>
+              <p>Correos Cash, Correos Market, récords de Navidad y criptosellos.</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link-card" href="curiosidades.html#ideas">
+              <span class="arrow" aria-hidden="true">→</span>
+              <h3 class="h5 fw-bold">Ideas de mejora digital</h3>
+              <p>Primeras pistas para el diagnóstico de las siguientes fases.</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link-card" href="tecnologia.html#video">
+              <span class="arrow" aria-hidden="true">→</span>
+              <h3 class="h5 fw-bold">Vídeo: cómo funciona Citypaq</h3>
+              <p>La entrega de paquetes sin depender de estar en casa.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Pie común a las tres páginas. -->
+  <!-- Pie común a todas las páginas. -->
   <footer class="site-footer mt-auto">
     <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
-      <span class="fw-semibold">Demo Proyecto</span>
-      <small>Sitio de demostración</small>
+      <span><strong>Proyecto Digitalización · 1.ª evaluación</strong> · David Montero · 2.º DAM · Noviembre de 2026</span>
+      <small>Trabajo académico, no es la web oficial de Correos.</small>
     </div>
   </footer>
 
-  <!-- El bundle activa los componentes con atributos data-bs-*. -->
+  <!-- El bundle activa el menú plegable (atributos data-bs-*). -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
           crossorigin="anonymous"></script>
